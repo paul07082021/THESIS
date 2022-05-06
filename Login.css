@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('blackboard.jpg');
+    min-height: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+.container .login{
+    background: white;
+    width:550px;
+    height: 650px;
+    border-radius:10px 0 0 10px;
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.container .register{
+    background: black;
+    width:550px;
+    height: 650px;
+    border-radius:0 10px 10px 0px;
+    margin: 0;
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login .btnSubmit{
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    width: 140px;
+}
+.register .btnSubmit{
+    font-weight: 600;
+    color:black;
+    background-color: white;
+    width: 140px;
+}
+.login .btnSubmit:hover{
+    background-color:whitesmoke;
+    color:black;
+    box-shadow:0 0 3px 0 black;
+}
+.register .btnSubmit:hover{
+    background-color:black;
+    color:whitesmoke;
+    box-shadow:0 0 3px 0 white;
+}
+.login .ForgetPwd{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+.form-control{
+    height: 38px;
+    width: 95%;
+    margin-bottom: 10px;
+    
+}
+.form-group{
+    position: relative;
+    margin-bottom: 8px;
+    
+}
+.form-group1{
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.form-group input[type=text],
+.form-group input[type=password],
+.form-group1 input[type=text],
+.form-group1 input[type=password]{
+    padding-left:43px;
+}
+.form-group .fas{
+    position: absolute;
+    width: 40px;
+    background-color: black;
+    padding:11px 0px;
+    color:whitesmoke;
+}
+.form-group1 .fas{
+    position: absolute;
+    width: 40px;
+    background-color: transparent;
+    margin-top: 1px;
+    margin-left: 1px;
+    padding:11px 0;
+    color:black;
+}
+
+.form-group input[type=text]:focus + .fas,
+.form-group input[type=password]:focus + .fas{
+    color:black;
+    background: whitesmoke;
+}
+.form-group1 input[type=text]:focus + .fas,
+.form-group1 input[type=password]:focus + .fas{
+    color:whitesmoke;
+    background: black;
+}
+.register .terms a{
+    text-decoration: none;
+}
+.register h3{
+color: whitesmoke;
+margin-top: -20px;
+text-align: center;
+font-size: 25px;
+margin-bottom: 25px;
+font-weight: bold;
+}
+.login h3{
+    color: black;
+    margin-top: -20px;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    }
+.register label{
+    color: white;
+    text-align: justify;
+    margin-bottom: -10px;
+    font-size: 15px;
+}
+.register label a{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+@media(max-width:500px){
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        display:block;
+    }
+    .login h3, .register h3{
+        margin-top: 20px;
+        }
+    .container .login{
+        width:310px;
+        height:300px;
+        border-radius:0px 0 0 0px;
+    }
+    .container .register{
+        width:310px;
+        height: 600px;
+        border-radius:0 0px 0px 0px;
+    }
+    .form-control{
+        height: 36.2px;
+        
+    }
+    .form-group .fas{
+        padding:11.5px 0px;
+        
+    }
+    .register label{
+        font-size: 13px;
+    }
+    .login .ForgetPwd{
+        font-size: 13px;
+    }
+}

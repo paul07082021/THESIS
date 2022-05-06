@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    background-color: black;
+    line-height: -30px;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    height: 80px;
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+    margin-left: 33px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+nav ul{
+    margin-top: 10px;
+    display: flex;
+    float:right;
+    margin-right: 20px;
+}
+nav ul li{
+    line-height: 60px;
+    margin: 0 10px;
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 8px 12px;
+    font-weight: 600;
+    background-color: blue;
+    border-radius: 20px 20px 20px 20px;
+}
+nav ul li a:hover{
+    background-color: yellow;
+    color: white;
+    transition: 0.5s;
+}
+
+.side-menu{
+    position: fixed;
+    background-color: red;
+    width: 380px;
+    height: 100%;
+    margin-top: 82px;
+}
+.side-menu center img{
+    height: 80px;
+    margin-top: -30px;
+    margin-left: -240px;
+}
+.side-menu a{
+    display: block;
+    line-height: 60px;
+    transition: 0.5s;
+}
+.side-menu a:hover{
+    background:blue;
+    padding-left: 20px;
+}
+.side-menu span{
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+}
+.side-menu i{
+    font-size: 20px;
+    margin-left: 20px;
+    color:white;
+}
